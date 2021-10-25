@@ -1,0 +1,468 @@
+@charset "UTF-8";
+@import "../assets/css/system-resrt.css";
+@import url("../assets/css/system-resrt.css");
+
+/* ----------- Start navbar section style ----------- */
+.flex{
+    display: flex;
+    align-items: center;
+}
+nav.menu-site{
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+nav.menu-site .menu-section-right span{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+nav.menu-site .menu-section-right img.menu-logo-site{
+    width: 150px;
+}
+nav.menu-site .menu-section-left{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+nav.menu-site .menu-section-left span{
+    font-size: 27px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+nav.menu-site .menu-section-left span.notification{
+    color: red;
+}
+nav.menu-site .menu-section-left span.verified{
+    color: gold;
+}
+nav.menu-site .menu-section-left span.cloud{
+    color: blue;
+}
+nav.menu-site .menu-section-left .icon-profile{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+nav.menu-site .menu-section-middle .input-wrapper{
+    border: 1px solid #bebdbd;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+nav.menu-site .menu-section-middle .input-wrapper input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 350px;
+    color: #000;
+}
+nav.menu-site .menu-section-middle .voice-search{
+    width: 20px;
+    margin-left: 20px;
+}
+@media only screen and (max-width:910px){
+    nav.menu-site .menu-section-middle{
+        display: none;
+    }
+}
+/* ----------- End navbar section style ----------- */
+/* ----------- Start sidebar section style -----------  */
+aside{
+    background: #f0f2f3;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 55px;
+    padding-left: 2%;
+    padding-top: 20px;
+    z-index: 10;
+}
+aside div.shortcut-list a i{
+    font-size: 25px;
+    margin-right: 20px;
+}
+aside div.shortcut-list hr{
+    margin: 20px 10px;
+    width: 85%;
+    height: 2px;
+    color: goldenrod;
+}
+aside div.shortcut-list a img{
+    width: 25px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+aside .shortcut-list a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+    transition: all 0.4s;
+}
+.shortcut-list a:first-child{
+    color: rgb(250, 65, 65);
+}
+aside .shortcut-list a:hover{
+    color: red;
+}
+aside div.shortcut-list h3{
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-family: 'Festive', cursive;
+    font-weight: 600;
+}
+@media only screen and (max-width:1240px){
+    aside .shortcut-list a p, hr, h3{
+        display: none;
+    }
+    aside{
+        width: 10%;
+    }
+}
+/* ----------- End sidebar section style -----------  */
+/* ----------- Start header section style -----------  */
+.hero-header{
+    background: #f9f9f9;
+    padding-left: 17%;
+    padding-right: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.hero-header img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.746);
+}
+.hero-header div.overlay{
+    background-color: rgba(41, 39, 39, 0.582);
+    width: 100%;
+    border-radius: 8px;
+    height: 100%;
+    padding: 20px;
+}
+.hero-header div.overlay h3{
+    color: #fff;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-family: 'Festive', cursive;
+}
+.hero-header div.overlay button{
+    border: none;
+    outline: none;
+    background-color: red;
+    color: #fff;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 1s;
+}
+.hero-header div.overlay button:hover{
+    border-radius: 15px 8px 15px 8px
+}
+/* ----------- End header section style -----------  */
+/* ----------- Start video box section style -----------  */
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px 16px;
+    margin-top: 15px;
+    background: #f9f9f9;
+    padding-left: 17%;
+    padding-right: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.vid-box-section{
+    padding: 5px;
+    transition: all 1s;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+.vid-box-section .thumbnail{
+    width: 100%;
+    border-radius: 5px;
+}
+.vid-box-section .flex-div{
+    align-items: flex-start;
+    margin-top: 7px;
+}
+.vid-box-section .flex-div img{
+    width: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.vid-info{
+    color: #5a5a5a;
+    font-size: 13px;
+}
+.vid-info a{
+    color: #000;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+.vid-box-section:hover{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+/* ----------- End video box section style -----------  */
+/* ----------- Start card text section style ----------- */
+.text-section-friendship{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 17%;
+    padding-right: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.text-section-friendship .header-text-section{
+    margin-bottom: 30px;
+}
+.text-section-friendship .header-text-section h1{
+    font-family: 'Oswald', sans-serif;
+}
+.text-section-friendship .header-text-section h5{
+    font-family: 'IM Fell English SC', serif;
+    margin-top: 10px;
+    color: #646363;
+}
+.text-section-friendship .text-box-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+}
+.text-section-friendship .text-box-section .baner-text-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.text-section-friendship .text-box-section .baner-text-box h5{
+    color: #a19f9f;
+}
+.text-section-friendship .text-box-section .baner-text-box img{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.text-section-friendship .text-box-section .text-box-main{
+    text-align: left;
+}
+.text-box-right{
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-right: 10px;
+    transition: all 1s;
+}
+.text-box-middle{
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-right: 10px;
+    transition: all 1s;
+}
+.text-box-left{
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-right: 10px;
+    transition: all 1s;
+}
+.text-box-right:hover{
+    transform: rotate(8deg);
+    background-color: goldenrod;
+}
+.text-box-middle:hover{
+    transform: rotate(-8deg);
+    background-color: goldenrod;
+}
+.text-box-left:hover{
+    transform: rotate(8deg);
+    background-color: goldenrod;
+}
+/* ----------- End card text section style -----------  */
+/* ----------- Start galary box section style ----------- */
+section.video-box-container{
+    padding-left: 17%;
+    padding-right: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: auto;
+}
+section.video-box-container video{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+.text-video-wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.text-video-wrapper .hashtag span{
+    font-size: 14px;
+    color: #5a5a5a;
+}
+.text-video-wrapper .like-icon{
+    display: flex;
+    align-items: center;
+}
+.text-video-wrapper .like-icon a i{
+    font-size: 27px;
+    margin-right: 50px;
+    transition: all 0.4s ease;
+}
+.text-video-wrapper .like-icon a i:hover{
+    color: red;
+}
+.text-video-wrapper .video-subscribe{
+    display: flex;
+    align-items: center;
+}
+.text-video-wrapper .video-subscribe span{
+    color: #5a5a5a;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+    margin-left: 10px;
+}
+.text-video-wrapper .video-subscribe span:hover{
+    color: red;
+}
+.text-video-wrapper .video-subscribe button{
+    border: none;
+    outline: none;
+    background-color: red;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.text-video-wrapper .video-subscribe a{
+    font-size: 18px;
+    color: black;
+}
+.text-video-wrapper .video-subscribe a i{
+    margin-right: 5px;
+}
+section.video-box-container hr{
+    padding-left: 17%;
+    padding-right: 2%;
+    background-color: #dddbdb;
+    border: none;
+    height: 1px;
+    margin-bottom: 10px;
+}
+section.video-box-container .comment-video{
+    display: flex;
+    align-items: center;
+}
+section.video-box-container .comment-video img{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+section.video-box-container .comment-video p.name-comment-video{
+    color: #333333;
+    font-family: 'IM Fell English SC', serif;
+    font-size: 18px;
+}
+section.video-box-container .comment-video p.sub-comment-video{
+    font-size: 12px;
+    color: #646363;
+}
+/* ----------- End galary box section style ----------- */
+/* ----------- Start footer section style -----------  */
+.footer-container{
+    padding-left: 19%;
+    padding-right: 5%;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    background-color: #292929;
+}
+.footer-container > div{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px 0;
+}
+.footer-container > div a{
+    color: #fff;
+    font-size: 14px;
+}
+.footer-container > div a{
+    transition: all 0.5s ease;
+}
+.footer-container > div i{
+    margin-right: 6px;
+    color: goldenrod;
+}
+.footer-container > div a:hover{
+    margin-left: 10px;
+    color: red;
+}
+.footer-container .footer-social-media i{
+    font-size: 30px;
+    vertical-align: -7px;
+    margin-right: 15px;
+}
+.footer-container .footer-social-media i.fa-telegram{
+    color: rgb(8, 206, 255);
+}
+.footer-container .footer-social-media i.fa-instagram{
+    color: rgb(255, 64, 175);
+} 
+.footer-container .footer-social-media i.fa-facebook-square{
+    color: rgb(51, 51, 255);
+}
+.footer-container .footer-social-media i.fa-twitter{
+    color: rgb(0, 132, 255);
+}
+.footer-container .footer-social-media i.fa-whatsapp{
+    color: rgb(8, 255, 8);
+}
+div.footer-adress img{
+    width: 35px;
+    border-radius: 50%;
+    vertical-align: -13px;
+    margin-right: 5px;
+}
+p.initail-comment{
+    color: rgb(255, 255, 255);
+    padding-left: 19%;
+    padding-right: 5%;
+    text-align: center;
+    background-color: #575757;
+    font-size: 16px;
+    font-family: Vazir-Medium;
+}
+p.initail-comment i{
+    color: red;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/* ----------- End footer section style ----------- */
